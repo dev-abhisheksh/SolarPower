@@ -45,7 +45,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2 group">
           <RiSunFill className="text-3xl text-yellow-500 group-hover:rotate-90 transition-transform duration-500" />
           <span className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-            SolarNova
+            Solar House
           </span>
         </Link>
 

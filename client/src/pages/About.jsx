@@ -26,7 +26,7 @@ const About = () => {
             animate={{ opacity: 1, scale: 1 }}
             className="text-4xl md:text-6xl font-bold text-white mb-4"
           >
-            About <span className="text-yellow-500">SolarNova</span>
+            About <span className="text-yellow-500">Solar House</span>
           </motion.h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Leading the transition to a sustainable future since 2011.

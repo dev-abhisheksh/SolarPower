@@ -53,14 +53,21 @@ const Home = () => {
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
+          <motion.p
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-yellow-500 font-bold mb-4 tracking-widest"
+          >
+            || Om Ganeshay Namah ||
+          </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
           >
-            Powering Your Future <br /> 
-            <span className="text-yellow-500">With Clean Energy</span>
+            Solar House <br /> 
+            <span className="text-yellow-500">Roof Top Solutions</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
@@ -68,7 +75,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-gray-200"
           >
-            Sustainable solar solutions for a brighter, greener tomorrow. Save up to 90% on your electricity bills.
+            Solar House | Roof Top Solutions. Expert Solar Panel Installation and Maintenance for a sustainable future.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -120,9 +127,9 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: <RiFlashlightLine />, title: "Residential Solar", desc: "Customized rooftop systems for homes to eliminate electricity bills." },
-              { icon: <RiShieldCheckLine />, title: "Commercial Solar", desc: "Large scale installations for industries, offices and solar farms." },
-              { icon: <RiToolsLine />, title: "Solar Maintenance", desc: "Professional cleaning and technical support for peak performance." }
+              { icon: <RiFlashlightLine />, title: "Residential Solar", desc: "Cost saving energy solutions for your home with premium roof top solar panels." },
+              { icon: <RiShieldCheckLine />, title: "Commercial Solar", desc: "Reliable commercial solar solutions to power your business efficiently." },
+              { icon: <RiToolsLine />, title: "Expert Installation", desc: "Professional installation and maintenance by our certified experts." }
             ].map((service, index) => (
               <motion.div 
                 key={index}
@@ -150,9 +157,9 @@ const Home = () => {
       <section className="py-24 dark:bg-gray-900">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
           <motion.div {...fadeInUp} className="lg:w-1/2">
-            <h2 className="text-4xl font-bold mb-6 dark:text-white">Why Choose SolarNova?</h2>
+            <h2 className="text-4xl font-bold mb-6 dark:text-white">Why Choose Solar House?</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              We provide end-to-end solar solutions with premium components and industry-leading warranties. Our experts ensure a seamless transition to clean energy.
+              We are specialized in Roof Top Solutions, providing end-to-end solar services with high-quality products and professional support.
             </p>
             <div className="space-y-6">
               {[
@@ -201,8 +208,8 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "John Doe", role: "Homeowner", text: "SolarNova transformed my home. My electricity bill is now zero! The installation was fast and professional." },
-              { name: "Sarah Smith", role: "CEO, TechPark", text: "We reduced our operational costs by 40% after installing SolarNova's commercial solution. Highly recommended!" },
+              { name: "John Doe", role: "Homeowner", text: "Solar House transformed my home. My electricity bill is now zero! The installation was fast and professional." },
+              { name: "Sarah Smith", role: "CEO, TechPark", text: "We reduced our operational costs by 40% after installing Solar House's commercial solution. Highly recommended!" },
               { name: "Mike Johnson", role: "Property Developer", text: "Reliable, efficient, and great customer service. They are my go-to partner for all my development projects." }
             ].map((t, i) => (
               <motion.div 
@@ -241,7 +248,7 @@ const Home = () => {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-500/10 rounded-full -ml-32 -mb-32"></div>
             
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 relative z-10">
-              Ready to Switch to <span className="text-yellow-500">Solar?</span>
+              Ready to Switch to <span className="text-yellow-500">Solar House?</span>
             </h2>
             <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">
               Join thousands of happy customers who are saving money and the environment. Get a custom quote for your property today.
