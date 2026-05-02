@@ -182,8 +182,9 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold mb-6 dark:text-white border-l-4 border-yellow-500 pl-4">Contact Info</h3>
                 <div className="space-y-6">
                   {[
-                    { icon: <RiMapPinLine />, title: "Visit Us", content: "123 Solar Street, Green City, EL 45678" },
-                    { icon: <RiPhoneLine />, title: "Call Us", content: "+91 98765 43210" },
+                    { icon: <RiMapPinLine />, title: "Visit Us", content: "Dukle Heaven at Shop No. 5, Block 1, ST Inez, Panjim, Goa" },
+                    { icon: <RiPhoneLine />, title: "Aman R Dubey", content: "+91 7219730511" },
+                    { icon: <RiPhoneLine />, title: "Reshma Naik", content: "+91 77190 39958" },
                     { icon: <RiMailLine />, title: "Email Us", content: "info@solarnova.com" },
                     { icon: <RiTimeLine />, title: "Working Hours", content: "Mon - Sat: 9:00 AM - 6:00 PM" }
                   ].map((item, i) => (

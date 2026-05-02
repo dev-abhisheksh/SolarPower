@@ -75,7 +75,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-gray-200"
           >
-            Solar House | Roof Top Solutions. Expert Solar Panel Installation and Maintenance for a sustainable future.
+            Solar House | Roof Top Solutions. Solar Panel Installation and Maintenance for a sustainable future.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}

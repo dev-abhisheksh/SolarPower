@@ -51,10 +51,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold text-white mb-6">Services</h4>
             <ul className="space-y-4">
-              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Residential Solar</Link></li>
-              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Commercial Solar</Link></li>
-              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Expert Installation</Link></li>
-              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Maintenance</Link></li>
+              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Residential Solar Solutions</Link></li>
+              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Commercial Solar Solutions</Link></li>
+              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Expert Installation by Professionals</Link></li>
+              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Quality Products & Reliable Service</Link></li>
+              <li><Link to="/services" className="hover:text-yellow-500 transition-colors">Cost Saving Energy Solutions</Link></li>
             </ul>
           </div>
 
