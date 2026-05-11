@@ -14,14 +14,14 @@ const About = () => {
       {/* Hero Banner */}
       <section className="relative pt-32 pb-20 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <img 
-            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=1600" 
-            alt="Solar Panels" 
+          <img
+            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=1600"
+            alt="Solar Panels"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             className="text-4xl md:text-6xl font-bold text-white mb-4"
@@ -56,15 +56,15 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="lg:w-1/2"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800" 
-              alt="Solar Story" 
+            <img
+              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800"
+              alt="Solar Story"
               className="rounded-2xl shadow-2xl"
             />
           </motion.div>
@@ -75,28 +75,28 @@ const About = () => {
       <section className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 dark:text-white">Meet Our Experts</h2>
+            <h2 className="text-4xl font-bold mb-4 dark:text-white">Meet Our Partners</h2>
             <div className="w-20 h-1.5 bg-yellow-500 mx-auto"></div>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto ">
             {[
-              { name: "Alex Johnson", role: "CEO & Founder", img: "1" },
-              { name: "Sarah Williams", role: "Chief Engineer", img: "2" },
-              { name: "David Chen", role: "Operations Head", img: "3" },
-              { name: "Emma Davis", role: "Solar Consultant", img: "4" }
+              { name: "Aman Dubey", role: "", img: "https://res.cloudinary.com/dwjwq3pwc/image/upload/v1778503461/user_v2kzgo.webp" },
+              { name: "Rohan Naik", role: "", img: "https://res.cloudinary.com/dwjwq3pwc/image/upload/f_auto,q_auto/nike_fizgp5" },
+              { name: "Reshma Naik", role: "", img: "https://res.cloudinary.com/dwjwq3pwc/image/upload/v1778503461/user_v2kzgo.webp" },
             ].map((member, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 {...fadeInUp}
-                transition={{ delay: i * 0.1 }}
-                className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg text-center group"
+                transition={{ delay: i * 0.2 }}
+                whileHover={{ y: -8 }}
+                className="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg text-center group transition-colors duration-300"
               >
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-yellow-500/20 group-hover:border-yellow-500 transition-colors">
-                  <img src={`https://i.pravatar.cc/150?img=${member.img}`} alt={member.name} className="w-full h-full object-cover" />
+                <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-yellow-500/20 group-hover:border-yellow-500 transition-colors shadow-inner">
+                  <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
                 </div>
-                <h3 className="text-xl font-bold dark:text-white">{member.name}</h3>
-                <p className="text-yellow-500 font-medium">{member.role}</p>
+                <h3 className="text-2xl font-bold dark:text-white mb-1">{member.name}</h3>
+                {member.role && <p className="text-yellow-500 font-medium">{member.role}</p>}
               </motion.div>
             ))}
           </div>
@@ -107,7 +107,7 @@ const About = () => {
       <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <motion.div 
+            <motion.div
               {...fadeInUp}
               className="bg-yellow-500 p-12 rounded-[2rem] text-gray-900"
             >
@@ -116,7 +116,7 @@ const About = () => {
                 To accelerate the world's transition to sustainable energy by providing innovative, cost-effective, and reliable solar solutions that empower individuals and organizations to contribute to a greener planet.
               </p>
             </motion.div>
-            <motion.div 
+            <motion.div
               {...fadeInUp}
               transition={{ delay: 0.2 }}
               className="bg-gray-900 p-12 rounded-[2rem] text-white"
