@@ -7,7 +7,7 @@ const WhatsAppFloat = () => {
 
   const contacts = [
     { name: "Aman Dubey", role: "Support & Queries", phone: "917219730511" },
-    { name: "Reshma Naik", role: "Sales & Details", phone: "917719039958" }
+    // { name: "Reshma Naik", role: "Sales & Details", phone: "917719039958" }
   ];
 
   return (
