@@ -17,14 +17,14 @@ const Footer = () => {
               || Om Ganeshay Namah ||
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Solar House | Roof Top Solutions<br />
+              Solar House | Roof Top Solutions | LLP<br />
               <span className="text-xs text-gray-500">GSTIN: 30AFXFS4194R1ZW</span>
             </p>
             <div className="flex gap-4 pt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition-all">
                 <RiFacebookFill size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition-all">
+              <a href="https://www.instagram.com/solarhouse.in" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition-all">
                 <RiInstagramFill size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition-all">

@@ -164,8 +164,8 @@ const Home = () => {
             <div className="space-y-6">
               {[
                 { title: "25-Year Warranty", desc: "Long-term peace of mind with our tier-1 solar panels." },
-                { title: "Smart Monitoring", desc: "Track your energy production in real-time via our app." },
-                { title: "Expert Installation", desc: "Certified engineers with over 15 years of experience." }
+                { title: "Smart Monitoring", desc: "Track your energy production in real-time." },
+                { title: "Expert Installation", desc: "Skilled engineers delivering modern solar solutions with dedicated customer support." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center text-gray-900">
