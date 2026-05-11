@@ -33,18 +33,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled 
-        ? 'py-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg' 
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+        ? 'py-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg'
         : 'py-5 bg-transparent'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-gray-900/90 border border-white/10 flex items-center justify-center overflow-hidden">
-            <img src="/logo.png" alt="Solar House Logo" className="w-8 h-8 object-contain" />
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="w-11 h-11 rounded-xl bg-white  shadow-sm overflow-hidden flex items-center justify-center p-0.5">
+            <img src="/logos.png" alt="Solar House Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
             Solar House
@@ -57,16 +56,15 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className={`font-medium transition-colors hover:text-yellow-500 ${
-                location.pathname === link.path 
-                ? 'text-yellow-500' 
+              className={`font-medium transition-colors hover:text-yellow-500 ${location.pathname === link.path
+                ? 'text-yellow-500'
                 : 'text-gray-700 dark:text-gray-200'
-              }`}
+                }`}
             >
               {link.name}
             </Link>
           ))}
-          
+
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
@@ -115,11 +113,10 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-xl font-semibold ${
-                    location.pathname === link.path 
-                    ? 'text-yellow-500' 
+                  className={`text-xl font-semibold ${location.pathname === link.path
+                    ? 'text-yellow-500'
                     : 'text-gray-800 dark:text-gray-200'
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
