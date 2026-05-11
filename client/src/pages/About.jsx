@@ -29,7 +29,7 @@ const About = () => {
             About <span className="text-yellow-500">Solar House</span>
           </motion.h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Leading the transition to a sustainable future since 2011.
+            Leading the transition to a sustainable future since 2026.
           </p>
         </div>
       </section>
@@ -40,18 +40,18 @@ const About = () => {
           <motion.div {...fadeInUp} className="lg:w-1/2">
             <h2 className="text-3xl font-bold mb-6 dark:text-white">Our Journey Towards <br /> Green Energy</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              Founded over 15 years ago, SolarNova started with a simple mission: to make solar energy accessible and affordable for everyone. What began as a small team of engineers has grown into a leading provider of renewable energy solutions across the country.
+              Founded in 2026, Solar House started with a simple mission: to make solar energy accessible and affordable for everyone. What began as a small team of engineers has grown into a leading provider of renewable energy solutions across the country.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               We believe that the sun is our most powerful resource, and by harnessing its power, we can build a cleaner, more sustainable world for generations to come.
             </p>
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <h4 className="text-3xl font-bold text-yellow-500 mb-2">15+</h4>
+                <h4 className="text-3xl font-bold text-yellow-500 mb-2">1+</h4>
                 <p className="text-gray-500">Years of Experience</p>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-yellow-500 mb-2">1000+</h4>
+                <h4 className="text-3xl font-bold text-yellow-500 mb-2">10+</h4>
                 <p className="text-gray-500">Projects Completed</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ const About = () => {
             className="lg:w-1/2"
           >
             <img 
-              src="https://images.unsplash.com/photo-1548605855-4b82c97c4ef6?w=800" 
+              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800" 
               alt="Solar Story" 
               className="rounded-2xl shadow-2xl"
             />

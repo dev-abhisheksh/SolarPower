@@ -8,7 +8,7 @@ const Home = () => {
   const [counts, setCounts] = useState({ installs: 0, capacity: 0, years: 0, satisfaction: 0 });
 
   useEffect(() => {
-    const targets = { installs: 500, capacity: 10, years: 15, satisfaction: 98 };
+    const targets = { installs: 10, capacity: 1, years: 1, satisfaction: 100 };
     const duration = 2000;
     const interval = 50;
     const steps = duration / interval;

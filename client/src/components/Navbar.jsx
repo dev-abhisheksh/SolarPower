@@ -42,9 +42,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 rounded-xl bg-white  shadow-sm overflow-hidden flex items-center justify-center p-0.5">
-            <img src="/logos.png" alt="Solar House Logo" className="w-full h-full object-contain" />
-          </div>
+          <img src="/logos.png" alt="Solar House Logo" className="w-12 h-12 object-contain" />
           <span className="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
             Solar House
           </span>
