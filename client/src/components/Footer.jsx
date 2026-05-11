@@ -66,7 +66,7 @@ const Footer = () => {
               <li>Dukle Heaven at Shop No. 5, Block 1, ST Inez, Panjim, Goa</li>
               <li>Aman R Dubey: +91 7219730511</li>
               <li>Reshma Naik: +91 77190 39958</li>
-              <li>Email: info@solarhousegoa.com</li>
+              <li>Email: Solarhouse.goa@gmail.com</li>
               <li>Mon - Sat: 9:00 AM - 6:00 PM</li>
             </ul>
           </div>
