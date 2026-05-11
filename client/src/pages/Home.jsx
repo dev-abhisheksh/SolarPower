@@ -39,14 +39,14 @@ const Home = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-      
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600" 
-            alt="Solar Panels" 
+          <img
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600"
+            alt="Solar Panels"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50"></div>
@@ -60,16 +60,16 @@ const Home = () => {
           >
             || Om Ganeshay Namah ||
           </motion.p>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
           >
-            Solar House <br /> 
+            Solar House <br />
             <span className="text-yellow-500">Roof Top Solutions</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -77,7 +77,7 @@ const Home = () => {
           >
             Solar House | Roof Top Solutions. Solar Panel Installation and Maintenance for a sustainable future.
           </motion.p>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -131,7 +131,7 @@ const Home = () => {
               { icon: <RiShieldCheckLine />, title: "Commercial Solar", desc: "Reliable commercial solar solutions to power your business efficiently." },
               { icon: <RiToolsLine />, title: "Expert Installation", desc: "Professional installation and maintenance by our certified experts." }
             ].map((service, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 {...fadeInUp}
                 transition={{ delay: index * 0.2 }}
@@ -179,15 +179,15 @@ const Home = () => {
               ))}
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="lg:w-1/2 relative"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800" 
-              alt="Solar Panel Installation" 
+            <img
+              src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800"
+              alt="Solar Panel Installation"
               className="rounded-3xl shadow-2xl"
             />
             <div className="absolute -bottom-8 -left-8 bg-yellow-500 p-8 rounded-2xl hidden md:block">
@@ -208,11 +208,23 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "John Doe", role: "Homeowner", text: "Solar House transformed my home. My electricity bill is now zero! The installation was fast and professional." },
-              { name: "Sarah Smith", role: "CEO, TechPark", text: "We reduced our operational costs by 40% after installing Solar House's commercial solution. Highly recommended!" },
-              { name: "Mike Johnson", role: "Property Developer", text: "Reliable, efficient, and great customer service. They are my go-to partner for all my development projects." }
+              {
+                name: "Karthik Acharya",
+                role: "Villa Owner",
+                text: "Installing solar with Solar House was one of the best decisions for my family. Our current bill has reduced a lot and the team handled everything properly from start to finish."
+              },
+              {
+                name: "Subhash Kohli",
+                role: "Business Owner",
+                text: "We installed Solar House panels for our factory and saw a huge difference in electricity expenses within a few months. Very professional service and good support."
+              },
+              {
+                name: "Shaju Kapsikar",
+                role: "Builder & Developer",
+                text: "I have worked with many companies before, but Solar House gave the best experience. Quality installation, on-time work, and very cooperative staff."
+              }
             ].map((t, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 {...fadeInUp}
                 transition={{ delay: i * 0.2 }}
@@ -240,13 +252,13 @@ const Home = () => {
       {/* CTA Banner */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             {...fadeInUp}
             className="bg-gray-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full -mr-32 -mt-32"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-500/10 rounded-full -ml-32 -mb-32"></div>
-            
+
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 relative z-10">
               Ready to Switch to <span className="text-yellow-500">Solar House?</span>
             </h2>

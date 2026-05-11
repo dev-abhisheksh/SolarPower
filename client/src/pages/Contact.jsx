@@ -185,7 +185,7 @@ const Contact = () => {
                     { icon: <RiMapPinLine />, title: "Visit Us", content: "Dukle Heaven at Shop No. 5, Block 1, ST Inez, Panjim, Goa" },
                     { icon: <RiPhoneLine />, title: "Aman R Dubey", content: "+91 7219730511" },
                     { icon: <RiPhoneLine />, title: "Reshma Naik", content: "+91 77190 39958" },
-                    { icon: <RiMailLine />, title: "Email Us", content: "info@solarnova.com" },
+                    { icon: <RiMailLine />, title: "Email Us", content: "Solarhouse.goa@gmail.com" },
                     { icon: <RiTimeLine />, title: "Working Hours", content: "Mon - Sat: 9:00 AM - 6:00 PM" }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4">
@@ -204,13 +204,14 @@ const Contact = () => {
               {/* Map Placeholder */}
               <div className="bg-gray-200 dark:bg-gray-800 h-64 rounded-[2rem] overflow-hidden">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.83543450937!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed659b5006b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1652873456789!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.487!2d73.8278!3d15.4909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc0a3a!2sDukle%20Heaven%2C%20ST%20Inez%2C%20Panjim%2C%20Goa!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
                   allowFullScreen="" 
                   loading="lazy" 
-                  title="map"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Solar House - Dukle Heaven, ST Inez, Panjim, Goa"
                 ></iframe>
               </div>
             </motion.div>
